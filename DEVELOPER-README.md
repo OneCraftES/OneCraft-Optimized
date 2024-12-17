@@ -1,6 +1,14 @@
-# Fabulously Optimized repository
+# OneCraft Optimized Repository
 
-Welcome to my repository.
+This is a fork of [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) focused on Minecraft 1.21+ and OneCraft server compatibility.
+
+## Upstream Development
+
+This project maintains compatibility with Fabulously Optimized's development workflow. For detailed information about the development process, please refer to the upstream documentation:
+- [Fabulously Optimized Developer Documentation](https://github.com/Fabulously-Optimized/fabulously-optimized/blob/main/DEVELOPER-README.md)
+
+## Repository Structure
+
 Here you'll find the resources for:
 
 * CurseForge modpack [(read more)](https://support.curseforge.com/en/support/solutions/articles/9000196904-creating-a-custom-profile)

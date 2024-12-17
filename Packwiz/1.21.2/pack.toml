@@ -1,6 +1,6 @@
-name = "Fabulously Optimized"
-author = "robotkoer"
-version = "6.3.0-alpha.1"
+name = "OneCraft Optimized"
+author = "OneCraft Team"
+version = "1.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
@@ -11,3 +11,4 @@ hash = "137a62d3a6b1a7d99a91c951f56e212ab891647cb078167f92001027ea94c17d"
 [versions]
 fabric = "0.16.7"
 minecraft = "1.21.2"
+
