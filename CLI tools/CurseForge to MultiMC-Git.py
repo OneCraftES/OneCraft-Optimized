@@ -3,10 +3,10 @@ from pathlib import Path
 
 
 minecraft_version = "1.21.4"
-git_path = Path.home() / "Documents/GitHub/fabulously-optimized/"
+git_path = Path.home() / "Documents/GitHub/OneCraft-optimized/"
 packwiz_path = git_path / "Packwiz" / minecraft_version
-cf_path = Path.home() / "curseforge/minecraft/Instances/Fabulously Optimized/"
-mmc_path = Path.home() / "Documents/MultiMC/instances/Fabulously Optimized/minecraft/"
+cf_path = Path.home() / "curseforge/minecraft/Instances/OneCraft Optimized/"
+mmc_path = Path.home() / "Documents/MultiMC/instances/OneCraft Optimized/minecraft/"
 
 
 def remove_dir(path: Path, description: str) -> None:

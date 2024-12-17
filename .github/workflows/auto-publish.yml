@@ -4,7 +4,7 @@ on:
     types: [published]
 jobs:
   publish-to-curseforge:
-    if: github.repository_owner == 'Fabulously-Optimized'
+    if: github.repository_owner == 'OneCraftES'
     runs-on: ubuntu-24.04
     environment: github-actions
     steps:
@@ -22,14 +22,14 @@ jobs:
          uses: Kir-Antipov/mc-publish@v3.3
          with:
            name: ${{ steps.download-files.outputs.tag_name }} for ${{ vars.MC_VERSION }}
-           curseforge-id: 396246
+           curseforge-id: YOUR_CURSEFORGE_ID
            curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
            curseforge-files: '*.zip'
            loaders: fabric
            game-versions: ${{ vars.MC_VERSION }}
            
   publish-to-modrinth:
-    if: github.repository_owner == 'Fabulously-Optimized'
+    if: github.repository_owner == 'OneCraftES'
     runs-on: ubuntu-24.04
     environment: github-actions
     permissions:
@@ -52,13 +52,13 @@ jobs:
          run: |
            chmod +x ./packwiz
            pushd Packwiz/${{ vars.MC_VERSION }}
-           ../../packwiz modrinth export -o ../../Fabulously.Optimized-${{ github.ref_name }}.mrpack
+           ../../packwiz modrinth export -o ../../OneCraft.Optimized-${{ github.ref_name }}.mrpack
            popd
        - name: Attest mrpack
          id: attest-mrpack
          uses: actions/attest-build-provenance@v1
          with:
-          subject-path: Fabulously.Optimized-${{ github.ref_name }}.mrpack
+          subject-path: OneCraft.Optimized-${{ github.ref_name }}.mrpack
        - name: Copy and zip attestation
          run: |
            cp ${{ steps.attest-mrpack.outputs.bundle-path }} cosign-bundle.json
@@ -71,13 +71,13 @@ jobs:
            modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
            modrinth-unfeature-mode: subset
            files: |
-             Fabulously.Optimized-${{ github.ref_name }}.mrpack
+             OneCraft.Optimized-${{ github.ref_name }}.mrpack
              cosign-bundle.zip
            loaders: fabric
            game-versions: ${{ vars.MC_VERSION }}
        - name: Upload to Github
          uses: Shopify/upload-to-release@v2.0.0
          with:
-           name: Fabulously.Optimized-${{ github.ref_name }}.mrpack
-           path: Fabulously.Optimized-${{ github.ref_name }}.mrpack
+           name: OneCraft.Optimized-${{ github.ref_name }}.mrpack
+           path: OneCraft.Optimized-${{ github.ref_name }}.mrpack
            repo-token: ${{ secrets.GITHUB_TOKEN }}

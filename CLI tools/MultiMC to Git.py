@@ -4,8 +4,8 @@ import zipfile
 from pathlib import Path
 
 
-mmc_path = Path.home() / "Documents/MultiMC/instances/Fabulously Optimized/"
-git_path = Path.home() / "Documents/GitHub/fabulously-optimized/"
+mmc_path = Path.home() / "Documents/MultiMC/instances/OneCraft Optimized/"
+git_path = Path.home() / "Documents/GitHub/OneCraft-optimized/"
 output_path = Path.home() / "Desktop/"
 
 
@@ -49,7 +49,7 @@ with open(git_path / "MultiMC/Fabulously Optimized x.y.z/instance.cfg", "r+") as
 copy_to_archive(
     git_path / "MultiMC/Fabulously Optimized x.y.z/instance.cfg",
     f"Fabulously Optimized {version}/instance.cfg",
-    output_path / f"Fabulously Optimized {version}.zip",
+    output_path / f"OneCraft Optimized {version}.zip",
 )
 
 copy_file(

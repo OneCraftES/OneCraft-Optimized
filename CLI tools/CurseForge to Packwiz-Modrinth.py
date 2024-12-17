@@ -10,7 +10,7 @@ import toml  # pip install toml
 
 
 user_path = os.path.expanduser("~")
-git_path = user_path + "\\Documents\\GitHub\\fabulously-optimized\\"
+git_path = user_path + "\\Documents\\GitHub\\OneCraft-optimized\\"
 minecraft_version = "1.21.4"
 packwiz_path = git_path + "Packwiz\\" + minecraft_version + "\\"
 packwiz_exe_path = os.path.join("..", "packwiz.exe")
@@ -114,7 +114,7 @@ def main():
     # Export Packwiz pack via mmc-export method
     if mmc_export_packwiz_export and not refresh_only:
         mmc_zip_root = str(Path(cf_zip_path).parents[0])
-        mmc_zip_path = mmc_zip_root + "\\Fabulously Optimized " + pack_version + ".zip"
+        mmc_zip_path = mmc_zip_root + "\\OneCraft Optimized " + pack_version + ".zip"
         packwiz_config = git_path + "Packwiz\\mmc-export.toml"
 
         args = (
@@ -139,7 +139,7 @@ def main():
     # Export Modrinth pack and manifest via mmc-export method
     if mmc_export_modrinth_export and not refresh_only:
         mmc_zip_root = str(Path(cf_zip_path).parents[0])
-        mmc_zip_path = mmc_zip_root + "\\Fabulously Optimized " + pack_version + ".zip"
+        mmc_zip_path = mmc_zip_root + "\\OneCraft Optimized " + pack_version + ".zip"
         modrinth_config = git_path + "Modrinth\\mmc-export.toml"
         
         args = (
@@ -155,7 +155,7 @@ def main():
 
         if not is_legacy:
             extract_file(
-                mmc_zip_root + "\\Fabulously Optimized-" + pack_version + ".mrpack",
+                mmc_zip_root + "\\OneCraft Optimized-" + pack_version + ".mrpack",
                 "modrinth.index.json",
                 git_path + "\\" + "Modrinth",
                 "Modrinth manifest",
@@ -181,7 +181,7 @@ def main():
 
     if not refresh_only:
         mmc_zip_root = str(Path(cf_zip_path).parents[0])
-        mmc_zip_path = mmc_zip_root + "\\Fabulously Optimized " + pack_version + ".zip"
+        mmc_zip_path = mmc_zip_root + "\\OneCraft Optimized " + pack_version + ".zip"
         #remove_mod_from_archive("Sodium", mmc_zip_path)
         #remove_mod_from_archive("Iris", mmc_zip_path)
 

@@ -1,8 +1,9 @@
 {
     "formatVersion": 1,
     "game": "minecraft",
-    "versionId": "6.5.0-alpha.3",
-    "name": "Fabulously Optimized",
+    "versionId": "OC-6.5.0-alpha.3",
+    "name": "OneCraft Optimized",
+    "summary": "A focused fork of Fabulously Optimized for Minecraft 1.21+ with OneCraft server compatibility",
     "files": [
         {
             "path": "mods/ForgeConfigAPIPort-v21.4.1-1.21.4-Fabric.jar",

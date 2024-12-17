@@ -24,9 +24,9 @@ This document outlines the steps needed to properly fork and rebrand Fabulously 
 
 2. [x] Update metadata files:
    - [x] Modify pack.toml in Packwiz directory
-   - [ ] Update CurseForge metadata
-   - [ ] Update Modrinth metadata
-   - [ ] Update MultiMC instance information
+   - [x] Update CurseForge metadata
+   - [x] Update Modrinth metadata
+   - [x] Update MultiMC instance information
 
 ## Documentation Updates
 
@@ -52,6 +52,8 @@ This document outlines the steps needed to properly fork and rebrand Fabulously 
    - [x] Review and update crowdin.yml if maintaining translations
    - [ ] Update CI/CD workflows in .github directory
    - [x] Modify pack configurations in Packwiz directory
+   - [x] Update MultiMC configurations
+   - [x] Update MultiMC-Packwiz auto-update configurations
 
 3. [x] Mod Management:
    - [x] Review INCLUDED-MODS.md
@@ -61,9 +63,36 @@ This document outlines the steps needed to properly fork and rebrand Fabulously 
 ## Distribution Preparation
 
 1. [ ] Platform Setup:
-   - [ ] Create new project pages on CurseForge
-   - [ ] Create new project page on Modrinth
-   - [ ] Set up new documentation website if needed
+   - [x] CurseForge Project:
+     - [x] Update manifest.json with OneCraft information
+     - [x] Create project page
+     - [x] Set up project description
+     - [x] Configure project settings
+     - [ ] Add required screenshots
+     - [x] Set up proper dependencies
+     - [x] Configure version tracking
+
+   - [x] Modrinth Project:
+     - [x] Update modrinth.index.json with project metadata
+     - [x] Create project page
+     - [x] Set up project description
+     - [x] Configure project settings
+     - [ ] Add required screenshots
+     - [x] Set up proper dependencies
+     - [x] Configure version tracking
+
+   - [ ] MultiMC Distribution:
+     - [x] Update instance configurations
+     - [x] Update auto-update configurations
+     - [ ] Replace pack.png with new branding
+     - [x] Update GitHub repository URL in auto-update configuration
+     - [ ] Test auto-update functionality
+
+   - [ ] Documentation Website:
+     - [ ] Decide on documentation platform (GitHub Pages/GitBook)
+     - [ ] Set up basic structure
+     - [ ] Migrate relevant documentation
+     - [ ] Add installation guides
 
 2. [ ] Release Process:
    - [ ] Create release checklist
@@ -81,6 +110,13 @@ This document outlines the steps needed to properly fork and rebrand Fabulously 
    - [x] Establish versioning scheme
    - [ ] Document release process
    - [ ] Set up changelog automation
+   - [ ] Update CLI tools for OC version prefix
+   - [ ] Test version update scripts
+
+3. [ ] GitHub Repository Setup:
+   - [ ] Update FUNDING.yml with project's donation links
+   - [ ] Review and update GitHub workflows
+   - [ ] Review stale bot configuration
 
 ## Community and Support
 
