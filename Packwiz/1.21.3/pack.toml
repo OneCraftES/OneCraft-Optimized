@@ -1,12 +1,18 @@
+<<<<<<< HEAD
 name = "OneCraft Optimized"
 author = "OneCraft Team"
 version = "1.0.0"
+=======
+name = "Fabulously Optimized"
+author = "robotkoer"
+version = "6.4.0-beta.4"
+>>>>>>> upstream/main
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "cce470661577d92d7f316ea189e9afc025449fbf295cbddafa86b20835d80491"
+hash = "fe8b5735f418d3b34636c21ab94c166bca5e06baa0f1dd558f03e2f87b5c745a"
 
 [versions]
 fabric = "0.16.9"

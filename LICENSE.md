@@ -1,4 +1,4 @@
-Copyright 2020-2024 Fabulously Optimized Authors
+Copyright 2020-2025 Fabulously Optimized Authors
 Copyright 2024 OneCraft Optimized Authors
 
 This software is a fork of Fabulously Optimized (https://github.com/Fabulously-Optimized/fabulously-optimized)

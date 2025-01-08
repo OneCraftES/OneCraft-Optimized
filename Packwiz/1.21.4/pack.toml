@@ -1,12 +1,12 @@
 name = "OneCraft Optimized"
 author = "OneCraft Team"
-version = "1.0.0"
+version = "OC-6.5.0-alpha.7"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "80c700b0be3a0edfb6731089c0979b84649788dbb625f43a9f1bf3dedcdcbc23"
+hash = "245e7e38d2674371e8b436836966cdac2bf856fe4eec626614a41e650663213b"
 
 [versions]
 fabric = "0.16.9"
