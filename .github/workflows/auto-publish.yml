@@ -19,16 +19,12 @@ jobs:
           persist-credentials: false
 
       - name: Download packwiz
-        uses: actions/download-artifact@v4
-        with:
-          name: "Linux 64-bit x86"
-          github-token: ${{ secrets.GH_PAT }}
-          repository: Madis0/packwiz
-          run-id: 12104671023
+        run: |
+          curl -L -o packwiz "https://github.com/packwiz/packwiz/releases/download/v0.5.2/packwiz-linux-x86_64"
+          chmod +x packwiz
 
       - name: Set up environment
         run: |
-          chmod +x ./packwiz
           mkdir -p dist
 
       - name: Build MultiMC/PrismLauncher Package
