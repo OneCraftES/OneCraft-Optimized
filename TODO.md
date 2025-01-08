@@ -97,7 +97,7 @@ This document outlines the steps needed to properly fork and rebrand Fabulously 
      - [x] Create project page
      - [x] Set up project description
      - [x] Configure project settings
-     - [ ] Add required screenshots
+     - [ ] Add required screenshots (Platform Task)
      - [x] Set up proper dependencies
      - [x] Configure version tracking
 
@@ -106,14 +106,14 @@ This document outlines the steps needed to properly fork and rebrand Fabulously 
      - [x] Create project page
      - [x] Set up project description
      - [x] Configure project settings
-     - [ ] Add required screenshots
+     - [ ] Add required screenshots (Platform Task)
      - [x] Set up proper dependencies
      - [x] Configure version tracking
 
    - [ ] MultiMC Distribution:
      - [x] Update instance configurations
      - [x] Update auto-update configurations
-     - [ ] Replace pack.png with new branding
+     - [x] Replace pack.png with new branding
      - [x] Update GitHub repository URL in auto-update configuration
      - [ ] Test auto-update functionality
 
@@ -123,10 +123,22 @@ This document outlines the steps needed to properly fork and rebrand Fabulously 
      - [ ] Migrate relevant documentation
      - [ ] Add installation guides
 
-2. [ ] Release Process:
-   - [ ] Create release checklist
-   - [ ] Set up automated builds
-   - [ ] Prepare update channels
+2. [x] Release Process:
+   - [x] Create release checklist
+   - [x] Set up automated builds
+   - [x] Prepare update channels
+   - [ ] Configure platform credentials:
+     - [ ] Set CURSEFORGE_ID in repository variables
+     - [ ] Set MODRINTH_ID in repository variables
+     - [ ] Set MC_VERSION in repository variables
+     - [ ] Set CURSEFORGE_TOKEN in repository secrets
+     - [ ] Set MODRINTH_TOKEN in repository secrets
+     - [ ] Set GH_PAT in repository secrets
+   - [ ] Test automated release workflow:
+     - [ ] Create test release
+     - [ ] Verify GitHub release artifacts
+     - [ ] Verify CurseForge upload
+     - [ ] Verify Modrinth upload
 
 ## Maintenance Plan
 
