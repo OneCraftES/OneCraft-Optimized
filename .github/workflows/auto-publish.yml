@@ -21,7 +21,6 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-<<<<<<< HEAD
           go-version: '1.21'
 
       - name: Download and Build packwiz
@@ -33,12 +32,6 @@ jobs:
           mv packwiz ..
           cd ..
           rm -rf packwiz
-=======
-          name: "Linux 64-bit x86"
-          github-token: ${{ secrets.GH_PAT }}
-          repository: Madis0/packwiz
-          run-id: 12104671023
->>>>>>> 33027b91c63e8a6c3befd1bb41515222d0150dcc
 
       - name: Set up environment
         run: |
