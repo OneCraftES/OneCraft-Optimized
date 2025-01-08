@@ -1,0 +1,13 @@
+name = "Distant Horizons"
+filename = "distanthorizons-2.2.1-a-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/uCdwusMi/versions/2.2.1-a-1.21.1/distanthorizons-2.2.1-a-1.21.1.jar"
+hash-format = "sha512"
+hash = "664.4K"
+
+[update]
+[update.modrinth]
+mod-id = "uCdwusMi"
+version = "2.2.1-a-1.21.1" 

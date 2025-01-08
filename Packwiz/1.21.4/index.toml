@@ -323,3 +323,8 @@ hash = "d7fcf41b39bc369bd08e4fc07d98069f8e60ae29de4570e2c6534762a3d4bbf2"
 file = "resourcepacks/Translations_for_Sodium.pw.toml"
 hash = "3ce081500a9abadc391bb46375b78d18681322061552bc3c57721547e97ce892"
 metafile = true
+
+[[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "e8d139a8e4f8c631ba7b4915956c0572f5e6594f3c43f8752fc2f6a2f2e6e3f8"
+metafile = true

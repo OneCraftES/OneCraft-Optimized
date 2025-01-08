@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://download.fo/icon.png" alt="OneCraft Optimized logo" width="10%" height="10%">
+<img src="./icon.png" alt="OneCraft Optimized logo" width="10%" height="10%">
 
 # OneCraft Optimized
 

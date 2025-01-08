@@ -16,9 +16,9 @@ This document outlines the steps needed to properly fork and rebrand Fabulously 
 
 ## Branding Changes
 
-1. [ ] Replace Fabulously Optimized branding:
-   - [ ] Update logo and icons
-   - [ ] Replace `cape.png` with new design
+1. [x] Replace Fabulously Optimized branding:
+   - [x] Update logo and icons
+   - [x] Replace `cape.png` with new design
    - [x] Update README.md with OneCraft Optimized branding
    - [ ] Create new badges and shields for documentation
 
@@ -54,11 +54,40 @@ This document outlines the steps needed to properly fork and rebrand Fabulously 
    - [x] Modify pack configurations in Packwiz directory
    - [x] Update MultiMC configurations
    - [x] Update MultiMC-Packwiz auto-update configurations
+   - [x] Implement dynamic memory allocation based on system specs
+   - [x] Add optimized Java arguments for better performance
+   - [x] Configure memory settings for all supported launchers
 
 3. [x] Mod Management:
    - [x] Review INCLUDED-MODS.md
    - [x] Document any mod changes specific to OneCraft
    - [x] Update mod configuration files if needed
+   - [x] Add Distant Horizons mod for enhanced render distance
+   - [x] Implement dynamic mod downloads for version-specific builds
+
+## Memory Management
+
+1. [x] Launcher Memory Settings:
+   - [x] MultiMC/PrismLauncher configuration
+   - [x] CurseForge manifest settings
+   - [x] Modrinth index configuration
+   - [x] Dynamic memory allocation based on system specs:
+     - ≤4GB: 1GB min, 2GB max
+     - 5-8GB: 2GB min, 4GB max
+     - 9-16GB: 4GB min, 8GB max
+     - >16GB: 8GB min, 12GB max
+
+2. [x] Java Optimization:
+   - [x] G1GC garbage collector configuration
+   - [x] Memory management optimizations
+   - [x] Performance tweaks for modded Minecraft
+   - [x] Cross-platform compatibility (Windows/Linux/macOS)
+
+3. [x] Pre-launch Scripts:
+   - [x] System memory detection
+   - [x] Automatic memory adjustment
+   - [x] Error handling for unsupported configurations
+   - [x] Platform-specific implementations (PowerShell/Bash)
 
 ## Distribution Preparation
 
